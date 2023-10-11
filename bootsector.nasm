@@ -1,4 +1,36 @@
-; Infinite loop (e9 fd ff)
+mov ah,0x0e
+mov al, 'R'
+int 0x10
+
+mov al, 'G'
+int 0x10
+
+mov al, '3'
+int 0x10
+
+mov al, '5'
+int 0x10
+
+mov al, '3'
+int 0x10
+
+mov al, 'V'
+int 0x10
+
+
+
+mov al, '-'
+int 0x10
+
+mov al, 'O'
+int 0x10
+
+mov al, 'S'
+int 0x10
+
+mov al, 0xA
+int 0x10
+
 loop:
     jmp loop
 
